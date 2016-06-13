@@ -1,0 +1,613 @@
+[
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/nonCommercialWebsite",
+    "@type": [
+      "http://www.w3c.org/2008/skos/Concept",
+      "http://openpermissions.org/ns/opex/1.0/Host"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The Asset can be used on a personal website that does not generate income or carry advertising."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "non commercial website"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/HostScheme"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/anyHost"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/host",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Specifies on which type of host the asset may be presented or posted."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/Constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "host"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/Host"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/rightOperand"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/personalDevice",
+    "@type": [
+      "http://www.w3c.org/2008/skos/Concept",
+      "http://openpermissions.org/ns/opex/1.0/Host"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The Asset can be used on personal devices (e.g: Mobile Phone, Desktop Background, Camera Roll)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "personal device"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/HostScheme"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/anyHost"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/HostScheme",
+    "@type": [
+      "http://www.w3c.org/2008/skos/ConceptScheme"
+    ],
+    "http://www.w3c.org/2008/skos/hasTopConcept": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/anyHost"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/attributeText",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Required textual representation of copyrights attribution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/Constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Attribute Text"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/rightOperand"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL116C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/Host"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/host"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/Unit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Unit"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL120C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/width"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL110C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/views"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/visitorsPerMonth",
+    "@type": [
+      "http://openpermissions.org/ns/opex/1.0/Unit",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "visitorsPerMonth"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/UnitScheme"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/topUnit"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/anyHost",
+    "@type": [
+      "http://www.w3c.org/2008/skos/Concept",
+      "http://openpermissions.org/ns/opex/1.0/Host"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "anyHost"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/HostScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/personalSocialMediaWebsite",
+    "@type": [
+      "http://www.w3c.org/2008/skos/Concept",
+      "http://openpermissions.org/ns/opex/1.0/Host"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The Asset can be used on personal social media accounts."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "personal social media site"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/HostScheme"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/anyHost"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/Host",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The Host describes the type of site or device the asset can be used on."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Host"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Digital Catapult Software Engineering Team"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2015-02-22T10:56:00+00:00"
+      }
+    ],
+    "http://purl.org/dc/terms/rights": [
+      {
+        "@value": "(C) Digital Catapult Limited 2016"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "OpenPermissions Extension (ODRL2.1/ OpenPermissions Profile)."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.1.0"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/pixel",
+    "@type": [
+      "http://openpermissions.org/ns/opex/1.0/Unit",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "pixel"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/UnitScheme"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/topUnit"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/views",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Specifies the maximum number of views of the asset that may result in."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/Constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "views"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/rightOperand"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/commercialWebsite",
+    "@type": [
+      "http://www.w3c.org/2008/skos/Concept",
+      "http://openpermissions.org/ns/opex/1.0/Host"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The Asset can be used on a website that generates income or carries advertising."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "commercial website"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/HostScheme"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/anyHost"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/width",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Specifies the horizontal width of the asset."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/Constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "width"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/rightOperand"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/height",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Specifies the vertical height of the asset."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/Constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "height"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/rightOperand"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL113C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/height"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/Constraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/Constraint"
+      },
+      {
+        "@id": "_:ub1bL110C9"
+      },
+      {
+        "@id": "_:ub1bL120C9"
+      },
+      {
+        "@id": "_:ub1bL113C9"
+      },
+      {
+        "@id": "_:ub1bL123C9"
+      },
+      {
+        "@id": "_:ub1bL116C9"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/UnitScheme",
+    "@type": [
+      "http://www.w3c.org/2008/skos/ConceptScheme"
+    ],
+    "http://www.w3c.org/2008/skos/hasTopConcept": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/topUnit"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/opex/1.0/topUnit",
+    "@type": [
+      "http://openpermissions.org/ns/opex/1.0/Unit",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "topUnit"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/UnitScheme"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL123C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/opex/1.0/attributeText"
+      }
+    ]
+  }
+]

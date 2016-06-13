@@ -1,0 +1,231 @@
+{
+  "@context": {
+    "ns1": "http://digicat.io/ns/monk/0.3/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://www.w3c.org/2008/skos//skos/",
+      "@type": "owl:Ontology",
+      "ns1:CompiledAt": {
+        "@type": "xsd:dateTime",
+        "@value": "2015-12-22T12:04:00+00:00"
+      },
+      "owl:versionIRI": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "owl:versionInfo": "0-0-0-git-ca82c7cf6ba463e6aa7471a4fc513eab096c6cad"
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-1d11ce511d7462916d91d651f0f9f3e3",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "owl:maxCardinality": 1,
+      "owl:onProperty": {
+        "@id": "http://www.w3c.org/2008/skos/ConceptScheme_hasTopConcept"
+      }
+    },
+    {
+      "@id": "http://www.w3c.org/2008/skos/ConceptScheme_hasTopConcept",
+      "@type": [
+        "owl:ObjectProperty",
+        "owl:FunctionalProperty"
+      ],
+      "ns1:embedded": false,
+      "ns1:jsonPreferredName": "hasTopConcept",
+      "ns1:optional": true,
+      "ns1:visibility": "public",
+      "owl:inverseOf": {
+        "@id": "http://www.w3c.org/2008/skos/topConceptOf"
+      },
+      "rdfs:domain": {
+        "@id": "http://www.w3c.org/2008/skos/ConceptScheme"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "rdfs:range": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ns1:publicProperty"
+      }
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-a7b84c4b396907ff6ef79395756db246",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "http://www.w3c.org/2008/skos/ConceptScheme"
+      },
+      "owl:maxCardinality": 1,
+      "owl:onProperty": {
+        "@id": "http://www.w3c.org/2008/skos/inScheme"
+      }
+    },
+    {
+      "@id": "http://www.w3c.org/2008/skos/name",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "ns1:jsonPreferredName": "name",
+      "ns1:visibility": "public",
+      "rdfs:domain": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "rdfs:subPropertyOf": [
+        {
+          "@id": "ns1:publicProperty"
+        },
+        {
+          "@id": "ns1:exportedObjectProperty"
+        }
+      ]
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-8838e4a67e31045428ab60a50bdca9a8",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": 1,
+      "owl:onProperty": {
+        "@id": "http://www.w3c.org/2008/skos/name"
+      }
+    },
+    {
+      "@id": "http://www.w3c.org/2008/skos/narrowerThan",
+      "@type": "owl:ObjectProperty",
+      "ns1:embedded": false,
+      "ns1:jsonPreferredName": "narrowerThan",
+      "ns1:multiple": true,
+      "ns1:optional": true,
+      "ns1:visibility": "public",
+      "owl:inverseOf": {
+        "@id": "http://www.w3c.org/2008/skos/broaderThan"
+      },
+      "rdfs:domain": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "rdfs:range": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ns1:publicProperty"
+      }
+    },
+    {
+      "@id": "rdf:type",
+      "ns1:jsonPreferredName": "@type",
+      "ns1:multiple": true
+    },
+    {
+      "@id": "http://www.w3c.org/2008/skos/Concept",
+      "@type": [
+        "https://ns.void/xnode/xnmd5-31a330ee55c22c20e8c8d73cdd6841f7",
+        "owl:Class",
+        "https://ns.void/xnode/xnmd5-a7b84c4b396907ff6ef79395756db246",
+        "https://ns.void/xnode/xnmd5-8838e4a67e31045428ab60a50bdca9a8"
+      ],
+      "ns1:definedAtDebug": "/home/bn/ontology/RDIPY/chubeel/skos/concept.py:5",
+      "ns1:jsonPreferredName": "Concept",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "rdfs:label": "Concept"
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-31a330ee55c22c20e8c8d73cdd6841f7",
+      "@type": "owl:Restriction",
+      "owl:allValuesFrom": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "owl:onProperty": {
+        "@id": "http://www.w3c.org/2008/skos/narrowerThan"
+      }
+    },
+    {
+      "@id": "http://www.w3c.org/2008/skos/ConceptScheme",
+      "@type": [
+        "https://ns.void/xnode/xnmd5-1d11ce511d7462916d91d651f0f9f3e3",
+        "owl:Class"
+      ],
+      "ns1:definedAtDebug": "/home/bn/ontology/RDIPY/chubeel/skos/conceptscheme.py:7",
+      "ns1:jsonPreferredName": "ConceptScheme",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "rdfs:label": "ConceptScheme"
+    },
+    {
+      "@id": "http://www.w3c.org/2008/skos/inScheme",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "ns1:embedded": false,
+      "ns1:jsonPreferredName": "inScheme",
+      "ns1:optional": true,
+      "ns1:visibility": "public",
+      "rdfs:domain": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "rdfs:range": {
+        "@id": "http://www.w3c.org/2008/skos/ConceptScheme"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "ns1:publicProperty"
+      }
+    },
+    {
+      "@id": "http://www.w3c.org/2008/skos/broaderThan",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "http://www.w3c.org/2008/skos/narrowerThan"
+      },
+      "rdfs:domain": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "rdfs:range": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      }
+    },
+    {
+      "@id": "http://www.w3c.org/2008/skos/topConceptOf",
+      "@type": [
+        "owl:InverseFunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "owl:inverseOf": {
+        "@id": "http://www.w3c.org/2008/skos/ConceptScheme_hasTopConcept"
+      },
+      "rdfs:domain": {
+        "@id": "http://www.w3c.org/2008/skos/Concept"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3c.org/2008/skos/"
+      },
+      "rdfs:range": {
+        "@id": "http://www.w3c.org/2008/skos/ConceptScheme"
+      }
+    }
+  ]
+}
+

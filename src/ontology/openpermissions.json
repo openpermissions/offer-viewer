@@ -1,0 +1,1626 @@
+[
+  {
+    "@id": "_:ub1bL371C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/selectRequired"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL241C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Party"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/assigner"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/selectRequired",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "True if it is required to select an element on agreement of the policy."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSelector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/randomlyChosen",
+    "@type": [
+      "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicy",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "chosen in an arbitrary manner not controller by assignee or assigner"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "randomlyChosen"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicies"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/anySamplePolicy"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL406C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/targetObject"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL235C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/expires"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Indicates if the predicate used to connect the set to its elements, are \"pointing to\" the elements or \"pointing from\" the elements "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openlicensing.org/ns/ol/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AssetSetEdgeDirection"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/chosenSequentially",
+    "@type": [
+      "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicy",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "chosen according to a predefined order"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "chosenSequentially"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicies"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/anySamplePolicy"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/selectedByAssignee",
+    "@type": [
+      "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicy",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "chosen by the assignee party"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "selectedByAssignee"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicies"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/anySamplePolicy"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicies",
+    "@type": [
+      "http://www.w3c.org/2008/skos/ConceptScheme"
+    ],
+    "http://www.w3c.org/2008/skos/hasTopConcept": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/anySamplePolicy"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/AssetSelector",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An asset that is actually sampled from a set.\n    An AssetSetSample must indicate the set asset must be selected from, may contain a sample policy,  and may contain the number of assets that should be sampled."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openlicensing.org/ns/ol/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AssetSelector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Asset"
+      },
+      {
+        "@id": "_:ub1bL371C9"
+      },
+      {
+        "@id": "_:ub1bL381C9"
+      },
+      {
+        "@id": "_:ub1bL378C9"
+      },
+      {
+        "@id": "_:ub1bL374C9"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL381C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSet"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/fromSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/id_types",
+    "@type": [
+      "http://www.w3c.org/2008/skos/ConceptScheme"
+    ],
+    "http://www.w3c.org/2008/skos/hasTopConcept": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/topIdType"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/AssetSet",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A set defined as the set of element pointing to a target object via a certain predicate."
+      },
+      {
+        "@language": "en",
+        "@value": "A set or collection of elements of type elementType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openlicensing.org/ns/ol/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AssetSet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL406C9"
+      },
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSet"
+      },
+      {
+        "@id": "_:ub1bL414C9"
+      },
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Asset"
+      },
+      {
+        "@id": "_:ub1bL417C9"
+      },
+      {
+        "@id": "_:ub1bL410C9"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/name",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Party"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/dc/elements/1.1/name"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/digitalPolicyAuthor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A field to allow the author of the digital policy - if available this person may be eventually be contacted to obtain information about the policy."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Policy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Policy Author"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/policyText",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A human readable (natural language) representation of the Policy."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Policy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Policy Text"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/pointingTo",
+    "@type": [
+      "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirection",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Point from the target_object to the element"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "pointingTo"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirections"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/anyEdgeDirection"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL227C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Party"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/assignee"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/alsoIdentifiedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An Asset may have different identifiers assigned to it.\n    The identities are not necessarily equivalent even though they have been assigned to the same Asset.\n    Each identity has a type, such as ISBN or EIDR and the type is semantically defined.\n    Identities that alsoIdentifiedBy refer to MUST be for the whole Asset and not for part of the Asset.\n    For example if the Asset is a book, the alsoIdentifiedBy ids will be for the book and NOT for pictures in the book."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Asset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Id"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/reference",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An reference id used by the provider to actually identify the party"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Party"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/dc/elements/1.1/source"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Title of the Asset for the purpose of presentation to a Licensee."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Asset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/dc/elements/1.1/title"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL410C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirection"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/edgeDirection"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL231C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Asset"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/target"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL224C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/Duty"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/duty"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL91C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/IdType"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/id_type"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL88C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/value"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/pointingFrom",
+    "@type": [
+      "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirection",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Point from the element to the target_object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "pointingFrom"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirections"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/anyEdgeDirection"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/topIdType",
+    "@type": [
+      "http://www.w3c.org/2008/skos/Concept",
+      "http://openpermissions.org/ns/op/1.1/IdType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "topIdType"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/id_types"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/targetObject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Indicates the entity that the elements must connect to through the predicate in order to be part of the set.\n    Default is the AssetSet instance itself."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/sharedDuties",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Duties that are shared by all Permissions in this policy."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Policy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Shared Duties"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/Duty"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/hasElement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL417C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#ObjectProperty"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/predicate"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL374C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/samplePolicy"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/Party",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "\nA party represent:\n  1. a legal person having duties and permissions as part of agreements.\n  2. a person known by an organisation (not necessarily providing its real name)\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Party"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/Party"
+      },
+      {
+        "@id": "_:ub1bL149C9"
+      },
+      {
+        "@id": "_:ub1bL155C9"
+      },
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Asset"
+      },
+      {
+        "@id": "_:ub1bL152C9"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/Id",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "\nIdentifier for an Asset.\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Id"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL88C9"
+      },
+      {
+        "@id": "_:ub1bL91C9"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/samplePolicy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The way asset are selected. Default is selected_by_assignee."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSelector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicy"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL58C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/title"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/count",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "\nDefault value is 1.\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSelector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "count"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Indicates the way sampling from a set is done. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openlicensing.org/ns/ol/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AssetSetSamplePolicy"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL414C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/hasElement"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirections",
+    "@type": [
+      "http://www.w3c.org/2008/skos/ConceptScheme"
+    ],
+    "http://www.w3c.org/2008/skos/hasTopConcept": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/anyEdgeDirection"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/policyDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A short description of the policy - usable to give a user rapidly information about the policy."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Policy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Policy Description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL378C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/count"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL221C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/policyDescription"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/value",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Id"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/fromSet",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The set asset can be picked from."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSelector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Set"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/Policy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An ODRL policy representing an agreement or a potential agreement.\n    Policy is the central entity that holds an ODRL policy together.\n    In its encoded form, e.g. in an XML document, it makes the policy addressable from the outside word via its uid attribute.\n    Policy can refer to Permissions and Prohibitions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Policy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ub1bL238C9"
+      },
+      {
+        "@id": "_:ub1bL224C9"
+      },
+      {
+        "@id": "_:ub1bL241C9"
+      },
+      {
+        "@id": "_:ub1bL231C9"
+      },
+      {
+        "@id": "_:ub1bL235C9"
+      },
+      {
+        "@id": "_:ub1bL227C9"
+      },
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/Policy"
+      },
+      {
+        "@id": "_:ub1bL221C9"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL155C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/name"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/selectedByAssigner",
+    "@type": [
+      "http://www.w3c.org/2008/skos/Concept",
+      "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "chosen by the assigner party"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "selectedByAssigner"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicies"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/narrowerThan": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/anySamplePolicy"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL61C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Id"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/alsoIdentifiedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/edgeDirection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Indicates in which direction the predicate is used to connect elements to the set target_object.\n        Default is op:pointingTo."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirection"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/predicate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Indicates which predicate is used to Indicate that element belong to a set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#ObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/id_type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Id"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/IdType"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL149C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/reference"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/defaultAssignee",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Implicit default assignee of a rule."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Policy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Default Assignee"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Party"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/expires",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Optional expiry date of the policy.  The policy is not considered valid after this date."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Policy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Expiry Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL152C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/provider"
+      }
+    ]
+  },
+  {
+    "@id": "_:ub1bL238C9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/digitalPolicyAuthor"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/anyEdgeDirection",
+    "@type": [
+      "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirection",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "anyEdgeDirection"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetEdgeDirections"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/IdType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "\nRepresents a class of identifiers\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IdType"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/provider",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "\noriganisation_id of the organisation representing the party.\nif no value is provider the party is the organisation itself\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/Party"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/anySamplePolicy",
+    "@type": [
+      "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicy",
+      "http://www.w3c.org/2008/skos/Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "anySamplePolicy"
+      }
+    ],
+    "http://www.w3c.org/2008/skos/inScheme": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/AssetSetSamplePolicies"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Digital Catapult Software Engineering Team"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2015-02-22T10:56:00+00:00"
+      }
+    ],
+    "http://purl.org/dc/terms/rights": [
+      {
+        "@value": "(C) Digital Catapult Limited 2016"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "OpenPermissions Extension (ODRL2.1/ OpenPermissions Profile)."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.1.0"
+      }
+    ]
+  },
+  {
+    "@id": "http://openpermissions.org/ns/op/1.1/Asset",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An Asset in ODRL is any object referred by a policy.\n    Here the Asset generally represents the intellectual work.\n    Only metadata about the Asset that is required for the licensing of the Asset should be defined here."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://openpermissions.org/ns/op/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Asset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/odrl/2/Asset"
+      },
+      {
+        "@id": "_:ub1bL58C9"
+      },
+      {
+        "@id": "_:ub1bL61C9"
+      }
+    ]
+  }
+]

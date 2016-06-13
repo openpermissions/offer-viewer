@@ -1,0 +1,146 @@
+.content > div {display: none;}
+
+.container .jumbotron {
+    padding-top: 0;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 0px;
+    border: 1px solid #ddd;
+}
+
+input {display: none;}
+.nav:hover {
+    cursor: pointer;
+    color: #23527c;
+    background-color: #bbb;
+    border-color: #bbb;
+}
+
+input + .nav {
+    padding: 10px 15px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    display: table-cell;
+    width: 1%;
+}
+
+input:checked + .nav {
+    cursor: default;
+    color: #555;
+    background-color: #eee;
+    border-color: #eee #ddd #ddd #ddd;
+}
+
+#summary:checked ~ .content #summary-content,
+#full-text:checked ~ .content #full-text-content
+{
+    display: block;
+    margin: 10px;
+
+}
+
+.body{
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+
+}
+
+.text-block{
+    white-space: pre-wrap;
+}
+
+.col {
+    width: 45%;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float: right;
+}
+
+.description{
+    display: inline;
+    position: relative;
+}
+
+.description h3 {
+    margin: 0px;
+}
+
+.description:hover:after{
+    font-weight:normal;
+    text-align:center;
+    font-size:1em;
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(description);
+    left: 20%;
+    padding: 3px 8px;
+    position: absolute;
+    z-index: 98;
+    width: 400px;
+}
+
+.description:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+.collapse {
+  display: none;
+}
+
+.collapse + label {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.collapse + label + .panel-body {
+  display: none;
+}
+
+.collapse:checked + label + .panel-body {
+  display: block;
+}
+
+.collapse + label:before {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  content: "\25B6";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.collapse:checked + label:before {
+  content:"\25BC";
+}
+
+.panel-heading {
+    margin-bottom: 0px;
+}
+
+.copyright {
+    clear:both;
+}

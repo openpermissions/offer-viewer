@@ -1,0 +1,202 @@
+{
+  "@context": {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "ns2": "http://digicat.io/ns/monk/0.3/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "rdf:type",
+      "ns2:jsonPreferredName": "@type",
+      "ns2:multiple": true
+    },
+    {
+      "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#/geo/",
+      "@type": "owl:Ontology",
+      "dc:description": "\n       Implementation of GEO language as defined by the namespace\n    ",
+      "ns2:CompiledAt": {
+        "@type": "xsd:dateTime",
+        "@value": "2015-12-22T12:04:00+00:00"
+      },
+      "owl:versionIRI": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+      },
+      "owl:versionInfo": "0-0-0-git-ca82c7cf6ba463e6aa7471a4fc513eab096c6cad"
+    },
+    {
+      "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "ns2:expressedInUnit": "MR/Metre",
+      "ns2:jsonPreferredName": "alt",
+      "ns2:visibility": "public",
+      "rdfs:domain": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+      },
+      "rdfs:range": {
+        "@id": "xsd:float"
+      },
+      "rdfs:subPropertyOf": [
+        {
+          "@id": "ns2:publicProperty"
+        },
+        {
+          "@id": "ns2:exportedObjectProperty"
+        }
+      ]
+    },
+    {
+      "@id": "_:N1245c22fd1574016a771ec69a6e292bb",
+      "xsd:minInclusive": -180
+    },
+    {
+      "@id": "_:N1f8290c85cff4f908f0e346730136724",
+      "@type": "rdfs:Datatype",
+      "owl:onDatatype": {
+        "@id": "xsd:float"
+      },
+      "owl:withRestrictions": {
+        "@list": [
+          {
+            "@id": "_:Na3abb2a14aa74470a9daa0692777904a"
+          },
+          {
+            "@id": "_:Nbf713cef85d141efae1899f8ca4874a4"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-a794c4fc7f5a0ccfa443d420903a60d6",
+      "@type": "owl:Restriction",
+      "owl:cardinality": 1,
+      "owl:onProperty": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "ns2:expressedInUnit": "DD/Degree",
+      "ns2:jsonPreferredName": "lat",
+      "ns2:visibility": "public",
+      "rdfs:domain": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+      },
+      "rdfs:range": {
+        "@id": "_:N1f8290c85cff4f908f0e346730136724"
+      },
+      "rdfs:subPropertyOf": [
+        {
+          "@id": "ns2:exportedObjectProperty"
+        },
+        {
+          "@id": "ns2:publicProperty"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+      "@type": [
+        "owl:Class",
+        "https://ns.void/xnode/xnmd5-bc4846539d8156ced06f12393c7da97e",
+        "https://ns.void/xnode/xnmd5-a794c4fc7f5a0ccfa443d420903a60d6",
+        "https://ns.void/xnode/xnmd5-1af642edaddff42031e5a3915a7445e0"
+      ],
+      "ns2:definedAtDebug": "/home/bn/ontology/RDIPY/chubeel/odrl/geo.py:7",
+      "ns2:jsonPreferredName": "Point",
+      "rdfs:comment": " Implementation of GeoPoints ",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+      },
+      "rdfs:label": "Point"
+    },
+    {
+      "@id": "_:N23764a995c5442b58185e7747f225f62",
+      "@type": "rdfs:Datatype",
+      "owl:onDatatype": {
+        "@id": "xsd:float"
+      },
+      "owl:withRestrictions": {
+        "@list": [
+          {
+            "@id": "_:N1245c22fd1574016a771ec69a6e292bb"
+          },
+          {
+            "@id": "_:N7c3c878032074397badd7657c56dd566"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "ns2:expressedInUnit": "DD/Degree",
+      "ns2:jsonPreferredName": "long",
+      "ns2:visibility": "public",
+      "rdfs:domain": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+      },
+      "rdfs:range": {
+        "@id": "_:N23764a995c5442b58185e7747f225f62"
+      },
+      "rdfs:subPropertyOf": [
+        {
+          "@id": "ns2:exportedObjectProperty"
+        },
+        {
+          "@id": "ns2:publicProperty"
+        }
+      ]
+    },
+    {
+      "@id": "_:Na3abb2a14aa74470a9daa0692777904a",
+      "xsd:minInclusive": -180
+    },
+    {
+      "@id": "_:N7c3c878032074397badd7657c56dd566",
+      "xsd:maxInclusive": 180
+    },
+    {
+      "@id": "_:Nbf713cef85d141efae1899f8ca4874a4",
+      "xsd:maxInclusive": 180
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-bc4846539d8156ced06f12393c7da97e",
+      "@type": "owl:Restriction",
+      "owl:cardinality": 1,
+      "owl:onProperty": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+      }
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-1af642edaddff42031e5a3915a7445e0",
+      "@type": "owl:Restriction",
+      "owl:cardinality": 1,
+      "owl:onProperty": {
+        "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+      }
+    }
+  ]
+}
+
