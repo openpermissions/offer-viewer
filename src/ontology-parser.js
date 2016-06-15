@@ -1,5 +1,5 @@
 /**
- * Template Generator
+ * Ontology Parser
  *
  * Copyright 2016 Open Permissions Platform Coalition
  *
@@ -16,16 +16,9 @@
  */
 
 const _get = require('lodash.get'),
-      jsonld = require('jsonld');
-
-function op(value) { return 'http://openpermissions.org/ns/op/1.1/' + value; }
-function odrl(value) { return 'http://www.w3.org/ns/odrl/2/' + value; }
-function opex(value) { return 'http://openpermissions.org/ns/opex/1.0/' + value; }
-function rdfs(value) { return 'http://www.w3.org/2000/01/rdf-schema#' + value; }
-function rdf(value) { return 'http://www.w3.org/1999/02/22-rdf-syntax-ns#' + value; }
-function skos(value) { return 'http://www.w3c.org/2008/skos/' + value; }
-function owl(value) { return 'http://www.w3.org/2002/07/owl#' + value; }
-
+      jsonld = require('jsonld'),
+      rdfs = require('./helper').rdfs,
+      geo = require('./helper').geo;
 
 class OPEntity {
   constructor(data) {
@@ -38,7 +31,7 @@ class OPEntity {
 class GeoLocation {
   constructor(data) {
     this.id = data['@id'];
-    this.name = _get(data, ['http://www.geonames.org/ontology#name', 0, '@value']);
+    this.name = _get(data, [geo('name'), 0, '@value']);
     this.description = '';
   }
 }
@@ -48,8 +41,56 @@ class Ontology {
     this.entity = {};
   }
 
-  loadOntology(ontology) {
-    let self = this;
+  loadODRL() {
+    /**
+     * Loads ODRL Ontology into Ontology Parser
+     * @returns Promise
+     */
+    const val = require('./ontology/odrl.json');
+    return this._load(val);
+  }
+
+  loadOP(){
+    /**
+     * Loads Open Permissions Ontology into Ontology Parser
+     * @returns Promise
+     */
+    const val = require('./ontology/openpermissions.json');
+    return this._load(val);
+  }
+
+  loadOPEX(){
+    /**
+     * Loads Open Permissions Extension Ontology into Ontology Parser
+     * @returns Promise
+     */
+    const val = require('./ontology/opex.json');
+    return this._load(val);
+  }
+
+  loadGeo() {
+    /**
+     * Loads Geonames Ontology into Ontology Parser
+     * @returns Promise
+     */
+    const val = require('./ontology/geonames_countries.json');
+    return this._load(val);
+  }
+
+  loadAll() {
+    /**
+     * Loads all known ontologies into Ontology Parser
+     * @returns Promise
+     */
+    return Promise.all([this.loadODRL(), this.loadOP(), this.loadOPEX(), this.loadGeo()]);
+  }
+
+  _load(ontology) {
+    /** Loads given ontology into Ontology Parser
+     * @param JSONLD Ontology
+     * @returns Promise
+     */
+    const self = this;
     return new Promise(function (resolve, reject) {
       jsonld.expand(ontology, (error, expanded) => {
         if (error) {
@@ -57,13 +98,13 @@ class Ontology {
           return;
         }
         expanded.forEach(i => {
-          if (i['@type'].indexOf('http://www.geonames.org/ontology#Feature') != -1) {
+          if (i['@type'].indexOf(geo('Feature')) != -1) {
             self.entity[i['@id']] = new GeoLocation(i);
           } else {
             self.entity[i['@id']] = new OPEntity(i);
           }
         });
-        resolve(self);
+        resolve(true);
       });
     });
   }

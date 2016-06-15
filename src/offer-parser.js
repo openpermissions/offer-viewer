@@ -16,10 +16,7 @@
  */
 
 const jsonld = require('jsonld');
-
-function op(value) { return 'http://openpermissions.org/ns/op/1.1/' + value; }
-function odrl(value) { return 'http://www.w3.org/ns/odrl/2/' + value; }
-function opex(value) { return 'http://openpermissions.org/ns/opex/1.0/' + value; }
+const odrl = require('./helper').odrl;
 
 class OfferParser {
   constructor() {
@@ -31,7 +28,7 @@ class OfferParser {
   }
 
   /**
-   * Load existing offer into factory
+   * Load existing offer into Offer Parser
    * @param offerData - JSONLD offer
    */
   loadOffer(offerData) {
@@ -41,7 +38,7 @@ class OfferParser {
     this.constraint={};
     this.duty={};
 
-    let self = this;
+    const self = this;
     return new Promise(function (resolve, reject) {
       jsonld.expand(offerData, (error, offer) => {
         if (error) {
@@ -49,7 +46,7 @@ class OfferParser {
           return;
         }
         offer.forEach(i => {
-          let type = i['@type'];
+          const type = i['@type'];
           if (type.indexOf(odrl('Offer')) != -1) {
             self.offer = i;
           } else if (type.indexOf(odrl('Permission')) != -1) {
@@ -67,10 +64,10 @@ class OfferParser {
           reject('Cannot load data');
           return;
         }
-        resolve(self);
+        resolve(true);
       });
-    })
-  };
+    });
+  }
 }
 
 module.exports = OfferParser;
