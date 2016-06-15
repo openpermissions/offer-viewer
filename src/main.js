@@ -17,7 +17,7 @@ const opex = require('./ontology/opex.json');
 const geo = require('./ontology/geonames_countries.json');
 
 class OfferRenderer {
-  constructor(offerData) {
+  constructor(offerData, tag='offer') {
     this.version = '__VERSION__';
 
     const ontology = new OntologyParser();
@@ -30,6 +30,13 @@ class OfferRenderer {
     let offer_promise = offer.loadOffer(offerData);
 
     Promise.all([offer_promise, odrl_promise, op_promise, opex_promise, geo_promise]).then(() => {
+
+      let nodes = document.getElementsByTagName(tag);
+      if (nodes.length == 0) {
+        throw Error(`Tag ${tag} not found in html`)
+      }
+      nodes[0].innerHTML = '<offer-renderer></offer-renderer>';
+
       riot.mount('offer-renderer', {ontology: ontology, policy: offer});
     });
   }

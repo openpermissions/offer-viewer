@@ -17,6 +17,7 @@ Usage
 -----
 The Offer viewer uses elements of Bootstrap css and its default theme. Visit the [Bootstrap](http://getbootstrap.com/getting-started/) website for instructions on how to use.
 
+### Offer Viewer with default element tag
 ```javascript
 var OfferViewer = require('offer-viewer');
 var offer = <json-ld offer>
@@ -26,7 +27,25 @@ new OfferViewer(offer);
 ```html
 <html>
     <body>
-        <offer-renderer></offer-renderer>
+        <offer></offer>
     </body>
 </html>
 ```
+
+### Offer Viewer with custom element tag
+```javascript
+var OfferViewer = require('offer-viewer');
+var offer = <json-ld offer>
+new OfferViewer(offer, tag='my-tag');
+```
+
+```html
+<html>
+    <body>
+        <my-tag></my-tag>
+    </body>
+</html>
+```
+
+See the examples directory for sample usage.
+
