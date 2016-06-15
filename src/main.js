@@ -2,7 +2,6 @@
 
 const defaults = require('lodash.defaults');
 const riot = require('riot');
-const rdf = require('rdflib');
 require('./templates/offer-renderer.tag');
 require('./templates/permission-renderer.tag');
 require('./templates/duty-renderer.tag');
