@@ -1,0 +1,200 @@
+{
+  "@context": {
+    "ns2": "http://digicat.io/ns/monk/0.3/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://ns.void/xnode/xnmd5-505508ca21d076031ff73aaf1c02e21d",
+      "@type": "owl:Restriction",
+      "owl:cardinality": 1,
+      "owl:onProperty": {
+        "@id": "schema:elevation"
+      }
+    },
+    {
+      "@id": "schema:GeoCoordinates",
+      "@type": [
+        "https://ns.void/xnode/xnmd5-1ffa661f432b9531a9cd7289bc48ef6f",
+        "https://ns.void/xnode/xnmd5-f10b4881fe9b7302931b1cb99a706a1a",
+        "owl:Class",
+        "https://ns.void/xnode/xnmd5-505508ca21d076031ff73aaf1c02e21d"
+      ],
+      "ns2:definedAtDebug": "/home/bn/ontology/RDIPY/chubeel/odrl/geo.py:21",
+      "ns2:jsonPreferredName": "GeoCoordinates",
+      "rdfs:isDefinedBy": {
+        "@id": "schema:"
+      },
+      "rdfs:label": "GeoCoordinates"
+    },
+    {
+      "@id": "rdf:type",
+      "ns2:jsonPreferredName": "@type",
+      "ns2:multiple": true
+    },
+    {
+      "@id": "_:N46c4fca2816346ee8ea522efab1ff1af",
+      "xsd:minInclusive": -180
+    },
+    {
+      "@id": "http://schema.org//schemaorg/",
+      "@type": "owl:Ontology",
+      "ns2:CompiledAt": {
+        "@type": "xsd:dateTime",
+        "@value": "2015-12-22T12:04:00+00:00"
+      },
+      "owl:versionIRI": {
+        "@id": "schema:"
+      },
+      "owl:versionInfo": "0-0-0-git-ca82c7cf6ba463e6aa7471a4fc513eab096c6cad"
+    },
+    {
+      "@id": "_:Nd78359792afb4d889c82c31fd5add962",
+      "xsd:maxInclusive": 180
+    },
+    {
+      "@id": "schema:longitude",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "ns2:expressedInUnit": "DD/Degree",
+      "ns2:jsonPreferredName": "longitude",
+      "ns2:visibility": "public",
+      "rdfs:domain": {
+        "@id": "schema:GeoCoordinates"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "schema:"
+      },
+      "rdfs:range": {
+        "@id": "_:N1edd71e53c934136b45fa4de6e2b2fec"
+      },
+      "rdfs:subPropertyOf": [
+        {
+          "@id": "ns2:exportedObjectProperty"
+        },
+        {
+          "@id": "ns2:publicProperty"
+        }
+      ]
+    },
+    {
+      "@id": "_:N8f6adc7c3fa6485b9a4e5314d3d85d73",
+      "@type": "rdfs:Datatype",
+      "owl:onDatatype": {
+        "@id": "xsd:float"
+      },
+      "owl:withRestrictions": {
+        "@list": [
+          {
+            "@id": "_:N46c4fca2816346ee8ea522efab1ff1af"
+          },
+          {
+            "@id": "_:Nd78359792afb4d889c82c31fd5add962"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "schema:latitude",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "ns2:expressedInUnit": "DD/Degree",
+      "ns2:jsonPreferredName": "latitude",
+      "ns2:visibility": "public",
+      "rdfs:domain": {
+        "@id": "schema:GeoCoordinates"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "schema:"
+      },
+      "rdfs:range": {
+        "@id": "_:N8f6adc7c3fa6485b9a4e5314d3d85d73"
+      },
+      "rdfs:subPropertyOf": [
+        {
+          "@id": "ns2:publicProperty"
+        },
+        {
+          "@id": "ns2:exportedObjectProperty"
+        }
+      ]
+    },
+    {
+      "@id": "_:Ncb92c9897ac946fe8785114a238337e6",
+      "xsd:minInclusive": -180
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-f10b4881fe9b7302931b1cb99a706a1a",
+      "@type": "owl:Restriction",
+      "owl:cardinality": 1,
+      "owl:onProperty": {
+        "@id": "schema:longitude"
+      }
+    },
+    {
+      "@id": "_:N1edd71e53c934136b45fa4de6e2b2fec",
+      "@type": "rdfs:Datatype",
+      "owl:onDatatype": {
+        "@id": "xsd:float"
+      },
+      "owl:withRestrictions": {
+        "@list": [
+          {
+            "@id": "_:Ncb92c9897ac946fe8785114a238337e6"
+          },
+          {
+            "@id": "_:Nd80c65f2f4d44d92ad350105479bf687"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://ns.void/xnode/xnmd5-1ffa661f432b9531a9cd7289bc48ef6f",
+      "@type": "owl:Restriction",
+      "owl:cardinality": 1,
+      "owl:onProperty": {
+        "@id": "schema:latitude"
+      }
+    },
+    {
+      "@id": "_:Nd80c65f2f4d44d92ad350105479bf687",
+      "xsd:maxInclusive": 180
+    },
+    {
+      "@id": "schema:elevation",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "ns2:expressedInUnit": "MR/Metre",
+      "ns2:jsonPreferredName": "elevation",
+      "ns2:visibility": "public",
+      "rdfs:domain": {
+        "@id": "schema:GeoCoordinates"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "schema:"
+      },
+      "rdfs:range": {
+        "@id": "xsd:float"
+      },
+      "rdfs:subPropertyOf": [
+        {
+          "@id": "ns2:exportedObjectProperty"
+        },
+        {
+          "@id": "ns2:publicProperty"
+        }
+      ]
+    }
+  ]
+}
+

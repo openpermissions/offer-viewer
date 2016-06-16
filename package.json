@@ -1,0 +1,47 @@
+{
+  "name": "offer-viewer",
+  "description": "Library to display an ODRL Offer",
+  "version": "0.0.0",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openpermissions/offer-viewer.git"
+  },
+  "dependencies": {
+    "currency-symbol-map": "^3.0.0",
+    "jsonld": "^0.4.8",
+    "lodash.get": "4.2.1",
+    "riot": "2.0.15",
+    "riotify": "0.0.9"
+  },
+  "devDependencies": {
+    "babel": "5.1.11",
+    "babel-runtime": "5.3.1",
+    "babelify": "6.0.2",
+    "browserify": "9.0.8",
+    "browserify-versionify": "1.0.4",
+    "eslint": "^2.11.1",
+    "eslint-plugin-riot": "^0.1.5",
+    "uglify-js": "2.4.20",
+    "watchify": "3.1.2"
+  },
+  "scripts": {
+    "build": "browserify src/main.js --s OfferViewer -o dist/offer-viewer.js --debug",
+    "build:watch": "watchify src/main.js --s OfferViewer -v -o dist/offer-viewer.js --debug",
+    "build:min": "browserify src/main.js --s OfferViewer | uglifyjs -c -m > dist/offer-viewer.min.js"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "optional": [
+            "runtime"
+          ]
+        }
+      ],
+      "riotify",
+      "browserify-versionify"
+    ]
+  }
+}
