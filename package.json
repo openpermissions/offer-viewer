@@ -15,6 +15,8 @@
     "riotify": "0.0.9"
   },
   "devDependencies": {
+    "async": "^0.9.0",
+    "aws-sdk": "^2.1.14",
     "babel": "5.1.11",
     "babel-runtime": "5.3.1",
     "babelify": "6.0.2",
@@ -22,13 +24,17 @@
     "browserify-versionify": "1.0.4",
     "eslint": "^2.11.1",
     "eslint-plugin-riot": "^0.1.5",
+    "lodash.partial": "^4.1.4",
+    "lodash.reduce": "^4.4.0",
+    "mime": "latest",
     "uglify-js": "2.4.20",
     "watchify": "3.1.2"
   },
   "scripts": {
     "build": "browserify src/main.js --s OfferViewer -o dist/offer-viewer.js --debug",
     "build:watch": "watchify src/main.js --s OfferViewer -v -o dist/offer-viewer.js --debug",
-    "build:min": "browserify src/main.js --s OfferViewer | uglifyjs -c -m > dist/offer-viewer.min.js"
+    "build:min": "browserify src/main.js --s OfferViewer | uglifyjs -c -m > dist/offer-viewer.min.js",
+    "deploy": "NODE_ENV=production browserify src/main.js --s OfferViewer | uglifyjs -m | node deploy"
   },
   "browserify": {
     "transform": [
