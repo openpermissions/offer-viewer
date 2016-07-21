@@ -1,0 +1,7 @@
+assets
+deploy
+dist
+src
+*.swp
+.env
+.idea
